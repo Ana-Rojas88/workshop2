@@ -1,44 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw=="
+    crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <title>Snap</title>
 </head>
+
 <body>
-   <header class="header">
-    <nav class="header__nav">
-        <div class="header__divleft">
-            <figure>
-                <img src="./images/logo.svg" alt="Logo snap">
-            </figure>
-            <select name="select">
-                <option value="value1">Feature</option>
-                <option value="value2">Todo List</option>
-                <option value="value3">Calendar</option>
-                <option value="value3">Reminders</option>
-                <option value="value3">Planning</option>
-            </select>
+    <header>
+        <div class="container">
+          <nav id="navbar">
+            <img src="./images/logo.svg" alt="snap logo" class="logo" />
+            <button aria-controls="mobile-nav" aria-expanded="false" class="mobile-menu-toggle"></button>
+            <div class="overlay"></div>
+            <div class="nav-menus mobile-nav" id="mobile-nav" data-visible="false">
+              <div class="menu-left">
+                <div class="flex-row">
+                  <div class="dropdown" data-dropdown>
+                    <button class="link" data-dropdown-button>
+                      Features <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu features">
+                      <div class="dropdown-links">
+                        <a href="#" class="link"><img src="./images/icon-todo.svg" alt="todo icon" />Todo Lists </a>
+                        <a href="#" class="link"><img src="./images/icon-calendar.svg"
+                            alt="calendar icon" />Calendar</a>
+                        <a href="#" class="link"><img src="./images/icon-reminders.svg"
+                            alt="bell icon" />Reminders</a>
+                        <a href="#" class="link"><img src="./images/icon-planning.svg"
+                            alt="planning icon" />Planning</a>
+                      </div>
+                    </div>
+                  </div>
     
-            <select name="select">
-                <option value="value1">Company</option>
-                <option value="value2">History</option>
-                <option value="value3">Our Team</option>
-                <option value="value3">Blog</option>     
-            </select>
-    
-            <a href="">Caeers</a>
-            <a href="">About</a>
-           
+                  <div class="dropdown" data-dropdown>
+                    <button class="link" data-dropdown-button>
+                      Company <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu careers">
+                      <div class="dropdown-links">
+                        <a href="#" class="link">History</a>
+                        <a href="#" class="link">Our Team</a>
+                        <a href="#" class="link">Blog</a>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="link">Careers</a>
+                  <a href="#" class="link">About</a>
+                </div>
+              </div>
+              <div class="menu-right">
+                <ul class="flex-row">
+                  <li><a href="#">login</a></li>
+                  <li><a class="btn btn-outline" href="#">Register</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <!-- Hero -->
+          <section id="hero">
+            <div class="hero-content">
+              <h1>Make <br />remote work</h1>
+              <p>
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar.
+              </p>
+              <a href="" class="btn btn-dark">Learn More</a>
+              <div class="clients">
+                <img src="./images/client-databiz.svg" alt="audiophile logo" />
+                <img src="./images/client-audiophile.svg" alt="audiophile logo" />
+                <img src="./images/client-meet.svg" alt="audiophile logo" />
+                <img src="./images/client-maker.svg" alt="audiophile logo" />
+              </div>
+            </div>
+            <div class="hero-image"></div>
+          </section>
         </div>
-        <div class="header__divright">
-         <a href=""><button>Login</button></a>
-         <a href=""><button>Register</button></a>
-        </div>
-    </nav>
-   </header>
-   <main></main>
+      </main>
 </body>
+
 </html>
